@@ -244,10 +244,10 @@
 >如果你引用的是同一路径下的**本地资源，可以使用相对路径**：
 >
 >```markdown
->See my [Markdown](/前端框架知识体系/Markdown/Markdown教程.md) page for details.
+>See my [Markdown](./Markdown教程.md) page for details.
 >```
 >
->See my [Markdown](/前端框架知识体系/Markdown/Markdown基础教程.md) page for details.
+>See my [Markdown](./Markdown教程.md) page for details.
 >
 ### 引用链接
 >

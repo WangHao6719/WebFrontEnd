@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 引入axios发送请求 -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        // 简单封装一个axios向代理服务器发送请求
+        function proxyAxios(data) {
+            return axios({
+                url: 'http://localhost:8081/proxyApi', // 请求自己搭建的node代理服务器的地址
+                method: 'POST',
+                headers: { 'content-type': 'application/x-www-form-urlencoded' },
+                data
+            })
+        }
+
+        // 使用node代理服务器向服务器发送请求
+        proxyAxios({
+            url: 'https://pvp.qq.com/web201605/js/herolist.json',// 需要代理访问真实服务器的url
+            method: 'GET',
+        }).then(res => {
+            console.log(res.data)
+        }).catch(err => {
+            console.log(err)
+        })
+    </script>
+</body>
+
+</html>
