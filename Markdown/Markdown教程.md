@@ -13,18 +13,21 @@
 | 标题     | Ctrl+1…6                                                     |
 | 加粗     | Ctrl+B                                                       |
 | 斜体     | Ctrl+I                                                       |
-| 有序列表 | Ctrl+O                                                       |
-| 无序列表 | Ctrl+U                                                       |
-| 任务列表 | Ctrl+C                                                       |
-| 引用     | Ctrl+Q                                                       |
-| 插入代码 | Ctrl+K                                                       |
-| 插入链接 | Ctrl+L                                                       |
-| 插入图片 | Ctrl+G                                                       |
-| 分割线   | Ctrl+R                                                       |
+| 下划线 | Ctrl+U                                                      |
+| 插入链接 | Ctrl+K                                                 |
+| 插入图片 | Ctrl+Shift+I                                              |
+| 引用     | Ctrl+Shift+Q                                               |
+| 有序列表 | Ctrl+Shift+[                                           |
+| 无序列表 | Ctrl+Shift+]                                               |
+| 任务列表 | Ctrl+Shift+X                                               |
 
 ## 标题
 
 要创建标题，只要在标题文本前添加 **1~6个 `#`** 字符即可，使用的 #数量 将决定标题的大小，总共六级标题。**建议在#号后加一个 `空格`**，这是最标准的 Markdown 语法。
+
+
+
+
 
 ```markdown
 # 标题1
