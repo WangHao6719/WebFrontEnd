@@ -36,6 +36,7 @@
 // fn(20)
 // console.log(m)
 
+// console.log(++9)
 // let m = 10,
 //     n = 10
 // function foo(m) {
@@ -50,13 +51,13 @@
 // console.log('m:' + m)
 // console.log('n:' + n)
 
-function Foo(m, n) {
-    let ret = m + n;
-    this.m = m;
-    this.n = n;
-    console.log(ret);
-    return ret
-}
+// function Foo(m, n) {
+//     let ret = m + n;
+//     this.m = m;
+//     this.n = n;
+//     console.log(ret);
+//     return ret
+// }
 // console.log(new Foo(1, 2));
 
 // 01 普通函数调用
@@ -191,29 +192,29 @@ Foo.prototype.getN = function () {
 
 
 
-setTimeout(() => {
-    console.log('1');
-    new Promise((resolve) => {
-        console.log('2');
-        resolve();
-    }).then(() => {
-        console.log('3');
-    })
-    console.log('4');
-}, 0);
-function promise1() {
-    return new Promise((resolve) => {
-        console.log('5');
-        resolve();
-    })
-}
-async function async1() {
-    console.log('6');
-    await promise1();
-    console.log('7');
-}
-async1();
-console.log('8');
+// setTimeout(() => {
+//     console.log('1');
+//     new Promise((resolve) => {
+//         console.log('2');
+//         resolve();
+//     }).then(() => {
+//         console.log('3');
+//     })
+//     console.log('4');
+// }, 0);
+// function promise1() {
+//     return new Promise((resolve) => {
+//         console.log('5');
+//         resolve();
+//     })
+// }
+// async function async1() {
+//     console.log('6');
+//     await promise1();
+//     console.log('7');
+// }
+// async1();
+// console.log('8');
 
   // 输出结果 6 5 8 2 4 7 3 1
 
