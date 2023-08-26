@@ -216,5 +216,4 @@ Foo.prototype.getN = function () {
 // async1();
 // console.log('8');
 
-  // 输出结果 6 5 8 2 4 7 3 1
-
+// 输出结果 6 5 8 2 4 7 3 1

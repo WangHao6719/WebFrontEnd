@@ -10,11 +10,40 @@
 
 <body>
     <!-- div>lorem10*3 -->
-    <div>
-        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, reiciendis!</div>
-        <div>Beatae neque dicta eveniet deleniti odio dolores modi, dignissimos commodi?</div>
-        <div>Ea ducimus neque soluta error quidem harum excepturi autem voluptatibus.</div>
+    <div class="div">
+        <div class="div1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, reiciendis!
+            <div class="div2">Beatae neque dicta eveniet deleniti odio dolores modi, dignissimos commodi?</div>
+        </div>
+
     </div>
+    <style>
+        div {
+            color: #fff;
+        }
+
+        .div {
+            position: relative;
+
+        }
+
+        .div1 {
+            width: 200px;
+            height: 400px;
+            background-color: red;
+            position: absolute;
+            z-index: auto;
+            inset: 0;
+        }
+
+        .div2 {
+            width: 300px;
+            height: 120px;
+            background-color: blue;
+            position: relative;
+            z-index: -1;
+
+        }
+    </style>
 </body>
 
 </html>

@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "typescript",
+      "tsconfig": "JavaScript(行为)/TS基础教程/类型验算/infer/tsconfig.json",
+      "option": "watch",
+      "problemMatcher": ["$tsc-watch"],
+      "group": "build",
+      "label": "tsc: 监视 - JavaScript(行为)/TS基础教程/类型验算/infer/tsconfig.json"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+//实现将某个类型中的选中的属性设置为可选
 interface Article {
   title: string;
   content: string;
@@ -12,7 +13,6 @@ interface Article {
 // Pick 从 T 中选取 K
 type OPtions<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>;
 type CreateArticleOptions = OPtions<Article, "author" | "date" | "readCount">;
-
 function createArticle(options: CreateArticleOptions) {
   options.author = "admin";
 }
