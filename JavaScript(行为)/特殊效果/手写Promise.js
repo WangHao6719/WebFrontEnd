@@ -36,7 +36,7 @@ class MyPromise {
     }
     //辅助函数，用于判断是否是Promise
     #isPromiseLike = (result) => {
-        return typeof result === 'object' && typeof result.then === 'function'
+        return (typeof result === 'object' || typeof result === 'function') && typeof result.then === 'function'
     }
     //辅助函数，用于执行微任务
     #runMicroTask = (fn) => {
